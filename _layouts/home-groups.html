@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {{ content }}
+
+
+  
+{%- assign posts = site.posts -%}
+{%- assign posts_in_group = posts | where: "categories", page.type -%}
+  
+{%- if posts_in_group.size > 0 -%}
+  <ul class="post-list">
+    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+    {%- for post in posts_in_group -%}
+    <li>
+      <h2>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h2>
+        <div class="post-excerpt">{{ post.professor }}</div>
+        <div class="post-excerpt">{{ post.lab }}</div>
+        <div class="post-excerpt">{{ post.email }}</div>
+        <p class="post-meta">
+          <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ post.date | date: date_format }}
+          </time>
+        </p>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- else -%}
+  <div style="display:flex;justify-content: center;">
+    <p class = "post-content"><h1>~~ 敬請期待 ~~</h1></p>
+  </div>
+  {%- endif -%}
+
+</div>

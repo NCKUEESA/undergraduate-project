@@ -1,0 +1,24 @@
+- title: 首頁
+  url: /
+- title: 組別
+  sublinks:
+    - title: 材料組
+      url: /material/
+    - title: 控制組
+      url: /control/
+    - title: 電力組
+      url: /power/
+    - title: VLSI/CAD組
+      url: /VLSI-CAD/
+    - title: 儀器系統與晶片組
+      url: /instrument-system-chip/
+    - title: 資訊工程組
+      url: /computer-science/
+    - title: 微電子組
+      url: /microelectronic/
+    - title: 通訊與網路組
+      url: /communication-network/
+    - title: 奈米組
+      url: /nano/
+- title: 學年度
+  url: /years/
