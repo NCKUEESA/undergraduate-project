@@ -13,7 +13,7 @@ author: 114級王柏弘, 115級江秉儒
 # 曾永華 教授
 
 - Email：tzengyo@mail.ncku.edu.tw
-- 個人網頁：<{{ page.profile }}>
+- 個人網頁：[{{ page.profile }}](https://www.ee.ncku.edu.tw/teacher/index2.php?teacher_id=11)
 - 實驗室組別：微電子組
 - 實驗室：[{{ page.lab }}](https://www.ee.ncku.edu.tw/teacher/index2.php?teacher_id=11)
 - 採訪者：{{ page.author }}
